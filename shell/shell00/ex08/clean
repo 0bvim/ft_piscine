@@ -1,0 +1,1 @@
+find -mount \( -name "*~" -o -name "#*#" \) -print -delete
