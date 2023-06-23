@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 13:22:13 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/23 16:48:19 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/23 17:04:52 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,5 @@ void	ft_sort_int_tab(int *tab, int size)
 		{
 			pos++;
 		}
-		//if (tab[pos] < tab[pos - 1])
-		//{
-		//	swap = tab[pos - 1];
-		//	tab[pos - 1] = tab[pos];
-		//	tab[pos] = swap;
-		//	pos = 0;
-		//	}
     }
 }
