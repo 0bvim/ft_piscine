@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/14 20:09:35 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/29 14:02:10 by vde-frei         ###   ########.fr       */
+/*   Created: 2023/06/29 10:15:30 by vde-frei          #+#    #+#             */
+/*   Updated: 2023/06/29 11:23:55 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_atoi(char *str)
 {
-	int	factorial;
-	int	i;
+	int	nb;
+	int	parity;
 
-	i = 1;
-	factorial = 1;
-	if (nb < 0)
-		return (0);
-	while (i <= nb)
+	parity = 0;
+	nb = 0;
+	while ((*str >= 9 && *str <= 13) || *str == 32)
+		str++;
+	while (*str == '-' || *str == '+')
 	{
-		factorial = factorial * i;
-		i++;
+		if (*str == '-')
+			parity += 1;
+		str++;
 	}
-	return (factorial);
-	return (0);
+	while (*str >= '0' && *str <= '9')
+	{
+		nb *= 10;
+		nb += *str - 48;
+		str++;
+	}
+	if (parity % 2 == 1)
+		nb *= -1;
+	return (nb);
 }
-//#include <stdio.h>
-//int main(void)
-//{
-//		printf("%i\n", ft_iterative_factorial(9));
-//	return 0;
-//}
