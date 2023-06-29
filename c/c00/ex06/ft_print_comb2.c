@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 00:17:37 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/21 02:24:38 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 21:33:30 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_split_nbr(int a, int b)
 {
 	ft_putchar((a / 10) + '0');
 	ft_putchar((a % 10) + '0');
-		write(1, " ", 1);
+	write(1, " ", 1);
 	ft_putchar((b / 10) + '0');
 	ft_putchar((b % 10) + '0');
 	if (a != 98)

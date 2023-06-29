@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 21:45:01 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/25 21:55:28 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 22:02:54 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@ int	ft_str_is_alpha(char *str)
 {
 	while (*str)
 	{
-		if (!(*str > 64 && *str < 91) &&
-			!(*str > 96 && *str < 123))
-	  	{
+		if (!(*str > 64 && *str < 91)
+			&& !(*str > 96 && *str < 123))
+		{
 			return (0);
 		}
 		str++;

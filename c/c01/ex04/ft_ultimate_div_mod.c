@@ -6,14 +6,14 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 00:12:20 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/23 00:16:30 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 21:37:00 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int div;
-	int mod;
+	int	div;
+	int	mod;
 
 	div = *a / *b;
 	mod = *a % *b;

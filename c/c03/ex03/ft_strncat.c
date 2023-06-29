@@ -6,13 +6,13 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 23:40:25 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/28 15:13:08 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 22:19:54 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*dest)

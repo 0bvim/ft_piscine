@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 00:18:29 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/23 00:19:55 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 21:39:23 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		write (1, str++, 1);
 	}

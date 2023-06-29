@@ -6,14 +6,14 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/23 13:22:13 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/23 17:04:52 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 21:41:26 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_sort_int_tab(int *tab, int size)
 {
-	int swap;
-	int pos;
+	int	swap;
+	int	pos;
 
 	pos = 0;
 	while (pos < (size - 1))
@@ -29,5 +29,5 @@ void	ft_sort_int_tab(int *tab, int size)
 		{
 			pos++;
 		}
-    }
+	}
 }

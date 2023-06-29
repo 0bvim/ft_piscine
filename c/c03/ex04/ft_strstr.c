@@ -1,16 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/22 23:49:29 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/28 21:38:03 by vde-frei         ###   ########.fr       */
+/*   Created: 2023/06/28 15:29:19 by vde-frei          #+#    #+#             */
+/*   Updated: 2023/06/28 22:16:00 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+char	*ft_strstr(char *str, char *to_find)
 {
-	*********nbr = 42;
+	int	i;
+
+	if (*to_find == '\0')
+	{
+		return (str);
+	}
+	while (*str)
+	{
+		i = 0;
+		while (str[i] == to_find [i] && to_find[i] != '\0')
+		{
+			i++;
+		}
+		if (to_find[i] == '\0')
+			return (str);
+		str++;
+	}
+	return (str);
 }

@@ -6,13 +6,13 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 23:51:51 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/22 23:52:39 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 21:41:53 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swap(int *a, int *b)
 {
-	int swap;
+	int	swap;
 
 	swap = *a;
 	*a = *b;

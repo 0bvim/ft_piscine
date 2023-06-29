@@ -6,13 +6,14 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/25 00:17:26 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/25 00:50:34 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/28 22:03:40 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 //"walking" positions with a counter
 char	*ft_strcpy(char *dest, char *src)
 {
-	int counter;
+	int	counter;
 
 	counter = 0;
 	while (src[counter] != '\0')
