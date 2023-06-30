@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_iterative_power(int nb, int power)
+int	ft_iterative_power(int nb, int power)
 {
-	int i;
-	int total;
+	int	i;
+	int	total;
 
 	i = 0;
 	total = 1;
