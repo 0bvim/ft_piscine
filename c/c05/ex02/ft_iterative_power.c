@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 22:23:08 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/06/30 01:06:29 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/06/30 01:15:47 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ int ft_iterative_power(int nb, int power)
 //#include <stdio.h>
 //int main(void)
 //{
-//	printf("%d\n", ft_iterative_power(2, 8));
+//	printf("%d\n", ft_iterative_power(0, 0));
 //}
