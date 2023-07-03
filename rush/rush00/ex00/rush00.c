@@ -6,52 +6,37 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 00:42:07 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/07/03 02:55:48 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/07/03 18:45:09 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
-
-void	print_wid(int a)
-{
-	if (wid + 1 == x || wid == 0)
-		ft_putchar('o');
-	else
-		ft_putchar('-');
-}
-
-void	print_len(int b)
-{
-	if (len - 1 == 0)
-	{
-		ft_putchar('\n');
-		ft_putchar('o');
-	}
-	else if (len > 0)
-	{
-		ft_putchar('\n');
-		ft_putchar('|');
-	}
-}
 
 void	rush(int x, int y)
 {
 	int	wid;
 	int	len;
 
-	wid = x - 1;
-	len = y - 1;
+	wid = x;
+	len = y;
 	if (x < 0 || y < 0)
-		write (1, "Param < 0", 9);
-	if (x == 1 && y == 1)
-		ft_putchar('o');
-	while (wid >= 0 || len >= 0)
+		return ;
+	while (--len >= 0)
 	{
-		if (len + 1 == y || len == 0)
-			print_wid(wid);
-		else
-			print_len(len);
-		--len;
-		--wid;
+		while (--wid >= 0)
+		{
+			if ((wid == x - 1 && len == y - 1) || (wid == 0 && len == y - 1)
+				|| (len == 0 && wid == x - 1) || (len == 0 && wid == 0))
+				ft_putchar('o');
+			else if (wid < x - 1 && (len + 1 == y || len == 0))
+				ft_putchar('-');
+			else if ((wid < x - 1 && wid > 0))
+				ft_putchar(' ');
+			else if (!(wid == x - 1 && len == y - 1)
+				|| (wid == 0 && len == 0))
+				ft_putchar('|');
+		}
+		wid = x;
+		ft_putchar('\n');
 	}
 }
