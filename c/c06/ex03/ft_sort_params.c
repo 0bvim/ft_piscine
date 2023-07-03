@@ -6,20 +6,19 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 18:09:11 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/07/02 05:10:05 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/07/02 22:35:04 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	while (*str)
 	{
-		write (1, str, 1);
-		str++;
+		write (1, str++, 1);
 	}
-	return (*str);
+		write (1, "\n", 1);
 }
 
 int	ft_strcmp(char *s, char *s1)
@@ -29,14 +28,15 @@ int	ft_strcmp(char *s, char *s1)
 		++s;
 		++s1;
 	}
-	return (*s1 - *s1);
+	return (*s - *s1);
 }
 
 void	ft_swap(char **p, char **p1)
 {
 	char	*tmp;
 
-	tmp = *p, *p = *p1; *p1 = tmp;
+	tmp = *p, *p = *p1;
+	*p1 = tmp;
 }
 
 void	ft_sort(char **argv, int args)
@@ -64,5 +64,8 @@ void	ft_sort(char **argv, int args)
 int main (int argc, char *argv[])
 {
 	ft_sort(argv + 1, argc - 1);
+	
+	while (*(++argv))
+		ft_putstr(*argv);
 	return 0;
 }
