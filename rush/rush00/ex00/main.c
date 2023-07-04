@@ -6,14 +6,24 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 00:33:10 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/07/03 00:46:02 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/07/04 09:42:48 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 5);
+	rush(5, 3);
+	printf("\n");
+	rush(5, 1);
+	printf("\n");
+	rush(1, 1);
+	printf("\n");
+	rush(1, 5);
+	printf("\n");
+	rush(4, 4);
 	return (0);
 }
