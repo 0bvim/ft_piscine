@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 00:42:07 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/07/04 10:08:52 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/07/05 00:53:23 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,31 @@ void	ft_putchar(char c);
 
 void	rush(int x, int y)
 {
-	int	wid;
-	int	len;
+	int	i;
+	int	corner1;
+	int	corner2;
+	int	corner3;
+	int	corner4;
 
-	wid = x;
-	len = y;
+	i = 1;
+	corner1 = 1;
+	corner2 = x; 
+	corner3 = x * y - x + 1;
+	corner4 = x * y;
 	if (x < 0 || y < 0)
 		return ;
-	while (--len >= 0)
+	while (i <= x * y)
 	{
-		while (--wid >= 0)
-		{
-			if ((wid == x - 1 && len == y - 1) || (len == 0 && wid == 0))
-				ft_putchar('/');
-			else if ((len == 0 && wid == x - 1) || (wid == 0 && len == y - 1))
-				ft_putchar('\\');
-			else if ((wid < x - 1 && wid > 0) && (!(len == 0 || len == y - 1)))
-				ft_putchar(' ');
-			else if (!((wid == x - 1 && len == y - 1) || (len == 0 && wid == 0))
-				|| (!((len == 0 && wid == x - 1)
-						|| (len == 0 && wid == 0)) && (wid < x -1 && wid > 0)))
-				ft_putchar('*');
-		}
-		wid = x;
-		ft_putchar('\n');
+		if (i == corner1 || i == corner4)
+			ft_putchar('/');
+		else if (i == corner2 || i == corner3)
+			ft_putchar('\\');
+		else if (i <= x)
+			ft_putchar('*');
+		else
+			ft_putchar(' ');
+		if (i % x == 0)
+			ft_putchar('\n');
+		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: vde-frei <vde-frei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 22:02:13 by vde-frei          #+#    #+#             */
-/*   Updated: 2023/07/04 23:25:42 by vde-frei         ###   ########.fr       */
+/*   Updated: 2023/07/04 23:28:33 by vde-frei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	rush(int x, int y)
 			else if ((wid < x - 1 && wid > 0) && (len < y - 1 && len > 0))
 				ft_putchar(' ');
 			else if (wid <= x - 1 && len <= y - 1)
-				ft_putchar('B');	
+				ft_putchar('B');
 		}
 		wid = x;
 		ft_putchar('\n');
