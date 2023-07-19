@@ -6,4 +6,3 @@
 ## Here is the project, you can try it too!
 
 [![Fork Me](https://img.shields.io/badge/Fork--Me-H?style=social&logo=github)](https://github.com/vinicius-f-pereira/ft_piscine/fork)
-![Repo Stars](https://img.shields.io/github/stars/vinicius-f-pereira/ft_piscine?style=social)
